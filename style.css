@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Helvetica Neue', Arial, Sans-serif;
+  font-size: 16px;
+  max-width: 1024px;
+  margin: 2px auto;
+  color: #02151a; }
+
+.filters {
+  margin-bottom: 2px; }
+
+.filter-container {
+  float: left;
+  width: 14.3%;
+  padding-right: 10px;
+}
+.filter-container:last-of-type {
+    padding-right: 0;
+}
+.filter-container input {
+    -webkit-appearance: none;
+    border: 2px solid #0c00ff;
+    border-radius: 3px;
+    font-size: 18px;
+    width: 100%;
+}
+.filter-container input:focus {
+      outline: none;
+}
+
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-bottom: 1px solid #043a47; 
+  border-collapse: collapse; 
+}
+
+td {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #043a47;
+  padding: 3px 3px;
+}
+
+th {
+    text-align: left;
+    border-bottom: 1px solid #043a47; 
+    padding: 6px 4px;
+}
+
+/* Hide the other column */
+.hide {
+    display: none;
+}

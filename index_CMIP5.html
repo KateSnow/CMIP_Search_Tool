@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- link to jquery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src='papaparse.min.js'></script>
+<script src='multitable.js'></script>
+<link href='style.css' media='screen' rel='stylesheet' type='text/css' />
+
+</head>
+
+<body>
+
+<h2>ESGF CMIP5 NCI Replication Search</h2>
+<p>Last updated 2018-12-16 06:30:01</p>
+<p>Note that a maximum of 1000 results is displayed</p>
+<p>Use the blue boxes below to do a query search of the data available (done) and in the download queue (queued) for CMIP5.</p>
+<p>If the data you require is not found, please see the 'https://opus.nci.org.au/pages/viewpage.action?spaceKey=CMIP&title=Data+Download+Request' for details on making a download request.</p>
+
+<div class='container'>
+<div class='filters'>
+
+<div class='filter-container'>
+<input autocomplete='off' class='filter' name='variable' placeholder='variable' data-col='variable'/>
+</div>
+<div class='filter-container'>
+<input autocomplete='off' class='filter' name='model' placeholder='model' data-col='model'/>
+</div>
+<div class='filter-container'>
+<input autocomplete='off' class='filter' name='experiment' placeholder='experiment' data-col='experiment'/>
+</div>
+<div class='filter-container'>
+<input autocomplete='off' class='filter' name='frequency' placeholder='frequency' data-col='frequency'/>
+</div>
+<div class='filter-container'>
+<input autocomplete='off' class='filter' name='realm' placeholder='realm' data-col='realm'/>
+</div>
+<div class='filter-container'>
+<input autocomplete='off' class='filter' name='ensemble' placeholder='ensemble' data-col='ensemble'/>
+</div>
+
+<div class='clearfix'></div>
+</div>
+</div>
+<div class='container'>
+
+<table>
+<thead>
+  <th>variable</th>
+  <th>model</th>
+  <th>experiment</th>
+  <th>frequency</th>
+  <th>realm</th>
+  <th>ensemble</th>
+  <th>status</th>
+</thead>
+</table>
+</div>
+
+</body>
+</html>
