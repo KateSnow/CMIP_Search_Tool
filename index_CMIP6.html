@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- link to jquery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src='papaparse.min.js'></script>
+<script src='pgr_multitable_cmip6.js'></script>
+<link href='style.css' media='screen' rel='stylesheet' type='text/css' />
+
+</head>
+
+<!-- jQuery multifilter function -->
+<script type='text/javascript'>
+      $(document).ready(function() {
+        $('.filter').multifilter()
+      })
+  </script>
+
+<body>
+
+<h2>ESGF CMIP6 NCI Replication Search</h2>
+<p>Last updated 2019-05-05 19:18:02</p>
+<p>Note that a maximum of 1000 results is displayed</p>
+<p>Use the blue boxes below to do a query search of the data available (done) and in the download queue (queued) for CMIP6.</p>
+<p>Note the change in attribute labels from CMIP5 to CMIP6. For example, 'model' in CMIP5 is now referred as 'source_id' in CMIP6 and 'ensemble' in CMIP5 is 'member_id'.</p>
+<p>Both the download status and priorities are shown. A priority of 1-2 indicates variables in the bulk download while a priority of 'U' indicates that it has been requested by a user.</p>
+<p>If the data you require is not found, please see the 'https://opus.nci.org.au/pages/viewpage.action?spaceKey=CMIP&title=Data+Download+Request' for details on making a download request.</p>
+
+<div class='container'>
+<div class='filters'>
+
+<div class='filter-container'>
+<input autocomplete='off' class='filter' name='variable' placeholder='variable' data-col='variable'/>
+</div>
+<div class='filter-container'>
+<input autocomplete='off' class='filter' name='source_id' placeholder='source_id' data-col='source_id'/>
+</div>
+<div class='filter-container'>
+<input autocomplete='off' class='filter' name='experiment' placeholder='experiment' data-col='experiment'/>
+</div>
+<div class='filter-container'>
+<input autocomplete='off' class='filter' name='table_id' placeholder='table_id' data-col='table_id'/>
+</div>
+<div class='filter-container'>
+<input autocomplete='off' class='filter' name='member_id' placeholder='member_id' data-col='member_id'/>
+</div>
+
+<div class='clearfix'></div>
+</div>
+</div>
+<div class='container'>
+
+<table>
+<thead>
+  <th>variable</th>
+  <th>source_id</th>
+  <th>experiment</th>
+  <th>table_id</th>
+  <th>member_id</th>
+  <th>status, priority</th>
+</thead>
+</table>
+</div>
+
+</body>
+</html>
